@@ -1,6 +1,11 @@
 .Home {
-  position: relative;
   display: grid;
-  grid-template-columns: 18rem auto 20rem;
-  gap: 1rem;
+  grid-template-columns: 2fr 4fr 2fr; /* First component takes 2 columns, second takes 4 columns, and third takes 2 columns */
+  grid-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .Home {
+    grid-template-columns: 1fr;
+  }
 }
